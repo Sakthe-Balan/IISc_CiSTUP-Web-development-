@@ -8,7 +8,7 @@ export default function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<Travel />} />
-            <Route  exact path="/Second" element={<Mode />} />
+            <Route   path="/Second" element={<Mode />} />
           </Routes>
         </Router>
         

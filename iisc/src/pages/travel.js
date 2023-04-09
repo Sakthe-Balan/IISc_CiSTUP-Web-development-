@@ -260,19 +260,25 @@ function Travel() {
           </div>
         </div>
       </div>
-      <button  class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]">
-  <span class="absolute top-0 left-0 w-full h-full transition-all duration-200 ease-in-out opacity-0 invisible flex items-center justify-center">
-  <Link to={{
-        pathname: "/Second",
-        state: {
-          q1Response: q1Response,
-          q2Response: q2Response
-        }
-      }}>Next</Link>
-    
-  </span>
-  <span class="relative z-10">Next</span>
-</button>
+      {/* <button class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]">
+        <span class="absolute top-0 left-0 w-full h-full transition-all duration-200 ease-in-out opacity-0 invisible flex items-center justify-center">
+         
+        </span>
+        <span class="relative z-10">Next</span>
+      </button> */}
+      <div>
+      <Link class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]"
+            to={{
+              pathname: "/Second",
+              state: {
+                q1Response: q1Response,
+                q2Response: q2Response,
+              },
+            }}
+          >
+            Next
+          </Link>
+      </div>
     </div>
   );
 }
