@@ -16,8 +16,8 @@ function Travel() {
   console.log("q2Response:", q2Response);
 
   return (
-    <div className="bg-gradient-to-r from-teal-400 to-yellow-200 h-screen w-screen relative bootom-[40px] relative bottom-[2px]">
-      <div className=" rounded-lg shadow-md p-8 mt-10 animate__animated animate__fadeIn w-3/4 h-3/4 fixed left-[180px] top-[50px] bg-green-300 ">
+    <div className="bg-gradient-to-r from-teal-400 to-yellow-200 h-screen w-screen relative bootom-[40px] relative bottom-[2px] ">
+      <div className=" rounded-lg shadow-md p-8 mt-10 animate__animated animate__fadeIn w-3/4 h-3/4 fixed left-[180px] top-[50px] bg-slate-100 ">
         <h2 className="text-2xl font-bold mb-5 text-gray-800 text-center">
           Respondent Travel Profile
         </h2>
@@ -27,7 +27,7 @@ function Travel() {
               <div className="mb-5">
                 <label
                   htmlFor="q1"
-                  className="block text-lg font-medium mb-2 text-gray-700"
+                  className="block text-lg font-medium mb-2 text-black-700"
                 >
                   What is your most frequently used means of travel from your
                   home to work location?
@@ -38,7 +38,7 @@ function Travel() {
                       type="radio"
                       id="bus"
                       name="q1"
-                      value="bus"
+                      value="Bus"
                       onChange={handleQ1Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -54,7 +54,7 @@ function Travel() {
                       type="radio"
                       id="metro"
                       name="q1"
-                      value="metro"
+                      value="Metro"
                       onChange={handleQ1Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -70,7 +70,7 @@ function Travel() {
                       type="radio"
                       id="two-wheeler"
                       name="q1"
-                      value="two-wheeler"
+                      value="Own Two-wheeler"
                       onChange={handleQ1Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -86,7 +86,7 @@ function Travel() {
                       type="radio"
                       id="car"
                       name="q1"
-                      value="car"
+                      value="Own Car"
                       onChange={handleQ1Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -102,7 +102,7 @@ function Travel() {
                       type="radio"
                       id="walk-bicycle"
                       name="q1"
-                      value="walk-bicycle"
+                      value="Walk / Bicycle"
                       onChange={handleQ1Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -118,7 +118,7 @@ function Travel() {
                       type="radio"
                       id="auto"
                       name="q1"
-                      value="auto"
+                      value="Auto"
                       onChange={handleQ1Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -155,7 +155,7 @@ function Travel() {
               <div className="mb-5">
                 <label
                   htmlFor="q2"
-                  className="block text-lg font-medium mb-2 text-gray-700"
+                  className="block text-lg font-medium mb-2 text-black-700"
                 >
                   What is the total distance between your home and workplace?
                 </label>
@@ -281,7 +281,12 @@ function Travel() {
         >
           Next
         </Link> */}
-        <Link class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]" to={`/Second?q1=${q1Response}&q2=${q2Response}`}>Next</Link>
+        <Link
+          className="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]"
+          to={`/Second?q1=${q1Response}&q2=${q2Response}`}
+        >
+          Next
+        </Link>
       </div>
     </div>
   );
