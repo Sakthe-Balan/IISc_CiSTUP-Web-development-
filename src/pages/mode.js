@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { FaBus, FaBusAlt, FaTaxi, FaCar } from "react-icons/fa";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //best possible was is to import then manualy check
 import a from "../json/sample_db_0km.json";
 import b from "../json/sample_db_5km.json";
@@ -129,7 +129,7 @@ let l
     <FaBus />
     {db[0]["mode_1.trans"] === 1 && <FaBus />}
   </div>
-  <p>{db[0]["mode_1.ivtt"]} m</p>
+  <p>{db[0]["mode_1.ivtt"]} min</p>
 </td>
 
           <td className="border py-3 px-6 border-gray-500 text-center p-2 bg-blue-200">
@@ -140,25 +140,25 @@ let l
     <FaBus />
     {db[0]["mode_2.trans"] === 1 && <FaBus />}
   </div>
-  <p>{db[0]["mode_2.ivtt"]} m</p>
+  <p>{db[0]["mode_2.ivtt"]} min</p>
 </td>
           <td className="border py-3 px-6 border-gray-500 text-center p-2 bg-yellow-200">
             <div className="text-center items-center flex justify-center">
               <FaBusAlt />
             </div>
-            {db[0]["mode_4.ivtt"]} m
+            {db[0]["mode_4.ivtt"]} min
           </td>
           <td className="border py-3 px-6 border-gray-500 text-center p-2 bg-purple-200">
             <div className="text-center items-center flex justify-center">
               <FaCar />
             </div>
-            {q1Response === "Own Car" ? db[0]["mode_8.ivtt"] : db[0]["mode_9.ivtt"]} m
+            {q1Response === "Own Car" ? db[0]["mode_8.ivtt"] : db[0]["mode_9.ivtt"]} min
           </td>
           <td className="border py-3 px-6 border-gray-500 text-center p-2 bg-green-200">
             <div className="text-center items-center flex justify-center">
               <FaTaxi />
             </div>
-            {q1Response === "Own Car" ? db[0]["mode_7.ivtt"] : db[0]["mode_5.ivtt"]} m
+            {q1Response === "Own Car" ? db[0]["mode_7.ivtt"] : db[0]["mode_5.ivtt"]} min
           </td>
         </tr>
         <tr>
@@ -172,25 +172,25 @@ let l
 
         <tr className="border-b border  border-gray-500 hover:bg-gray-100">
           <td className="py-3 px-6 text-center border-r bg-red-200">
-            {db[0]["mode_1.walktime"] + db[0]["mode_1.waittime"]}m
+            {db[0]["mode_1.walktime"] + db[0]["mode_1.waittime"]}min
           </td>
           <td className="py-3 px-6   border-gray-500 text-center border-r bg-blue-200">
-            {db[0]["mode_2.walktime"] + db[0]["mode_2.waittime"]}m
+            {db[0]["mode_2.walktime"] + db[0]["mode_2.waittime"]}min
           </td>
           <td className="py-3 px-6  border-gray-500 text-center border-r bg-yellow-200">
-            {db[0]["mode_4.walktime"] + db[0]["mode_4.waittime"]}m
+            {db[0]["mode_4.walktime"] + db[0]["mode_4.waittime"]}min
           </td>
           <td className="py-3 px-6  border-gray-500 text-center border-r bg-purple-200">
             {q1Response === "Own Car"
               ? db[0]["mode_8.walktime"] + db[0]["mode_8.waittime"]
               : db[0]["mode_9.walktime"] + db[0]["mode_9.waittime"]}
-            m
+            min
           </td>
           <td className="py-3 px-6  border-gray-500 text-center border-r bg-green-200">
             {q1Response === "Auto"
               ? db[0]["mode_7.walktime"] + db[0]["mode_7.waittime"]
               : db[0]["mode_5.walktime"] + db[0]["mode_5.waittime"]}
-            m
+            min
           </td>
         </tr>
         <tr>
@@ -204,20 +204,20 @@ let l
 
         <tr className="border-b border border-gray-400 hover:bg-gray-100">
           <td className="py-3 px-6 text-center border-r  border-gray-400 bg-red-200">
-            upto {db[0]["mode_1.tvariab"]}m more
+            upto {db[0]["mode_1.tvariab"]}min more
           </td>
           <td className="py-3 px-6 text-center border-r border-gray-400 bg-blue-200 ">
-            upto {db[0]["mode_2.tvariab"]}m more
+            upto {db[0]["mode_2.tvariab"]}min more
           </td>
           <td className="py-3 px-6 text-center border-r border-gray-400 bg-yellow-200">
-            upto {db[0]["mode_4.tvariab"]}m more
+            upto {db[0]["mode_4.tvariab"]}min more
           </td>
           <td className="py-3 px-6 text-center border-r border-gray-400 bg-purple-200">
             upto{" "}
             {q1Response === "Own Car"
               ? db[0]["mode_8.tvariab"]
               : db[0]["mode_9.tvariab"]}
-            m more
+            min more
           </td>
           <td className="py-3 px-6 text-center border-r border-gray-400 bg-green-200">
             upto{" "}
@@ -295,7 +295,7 @@ let l
 
         <tr className="border-b border border-gray-400 hover:bg-gray-100">
           <td className="py-3 px-6 text-center border-r  border-gray-400 bg-red-200">
-          {/* <FontAwesomeIcon icon="fa-duotone fa-person-seat-reclined" /> */}
+          <FontAwesomeIcon icon="fa-duotone fa-person-seat-reclined" />
           {servtype_json[db[0]["mode_1.serv"]]}
           </td>
           <td className="py-3 px-6 text-center border-r border-gray-400 bg-blue-200 ">
