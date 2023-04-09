@@ -165,7 +165,7 @@ function Travel() {
                       type="radio"
                       id="less-than-five"
                       name="q2"
-                      value="<5"
+                      value="1"
                       onChange={handleQ2Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -181,7 +181,7 @@ function Travel() {
                       type="radio"
                       id="five-to-ten"
                       name="q2"
-                      value="5-10"
+                      value="2"
                       onChange={handleQ2Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -197,7 +197,7 @@ function Travel() {
                       type="radio"
                       id="ten-to-fifteen"
                       name="q2"
-                      value="10-15"
+                      value="3"
                       onChange={handleQ2Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -213,7 +213,7 @@ function Travel() {
                       type="radio"
                       id="fifteen-to-twenty"
                       name="q2"
-                      value="15-20"
+                      value="4"
                       onChange={handleQ2Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -229,7 +229,7 @@ function Travel() {
                       type="radio"
                       id="twenty-to-twentyfive"
                       name="q2"
-                      value="20-25"
+                      value="5"
                       onChange={handleQ2Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
@@ -245,7 +245,7 @@ function Travel() {
                       type="radio"
                       id="more-than-twentyfive"
                       name="q2"
-                      value=">25"
+                      value="6"
                       onChange={handleQ2Change}
                       className="mr-2 h-5 w-5 text-white-600 focus:ring-white-500"
                     />
