@@ -12,6 +12,8 @@ function Travel() {
   const handleQ2Change = (event) => {
     setQ2Response(event.target.value);
   };
+  console.log("q1Response:", q1Response);
+  console.log("q2Response:", q2Response);
 
   return (
     <div className="bg-gradient-to-r from-teal-400 to-yellow-200 h-screen w-screen relative bootom-[40px] relative bottom-[2px]">
@@ -267,17 +269,19 @@ function Travel() {
         <span class="relative z-10">Next</span>
       </button> */}
       <div>
-      <Link class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]"
-            to={{
-              pathname: "/Second",
-              state: {
-                q1Response: q1Response,
-                q2Response: q2Response,
-              },
-            }}
-          >
-            Next
-          </Link>
+        {/* <Link
+          class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]"
+          to={{
+            pathname: "/Second",
+            state: {
+              q1Response: q1Response,
+              q2Response: q2Response,
+            },
+          }}
+        >
+          Next
+        </Link> */}
+        <Link class="relative inline-flex items-center justify-center w-36 h-12 text-black bg-green-300 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 relative left-[1350px] top-[640px]" to={`/Second?q1=${q1Response}&q2=${q2Response}`}>Next</Link>
       </div>
     </div>
   );
