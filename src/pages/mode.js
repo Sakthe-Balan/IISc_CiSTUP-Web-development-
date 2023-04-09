@@ -295,8 +295,9 @@ let l
 
         <tr className="border-b border border-gray-400 hover:bg-gray-100">
           <td className="py-3 px-6 text-center border-r  border-gray-400 bg-red-200">
-          <FontAwesomeIcon icon="fa-duotone fa-person-seat-reclined" />
+         
           {servtype_json[db[0]["mode_1.serv"]]}
+          <FontAwesomeIcon icon="fa-duotone fa-person-seat-reclined" />
           </td>
           <td className="py-3 px-6 text-center border-r border-gray-400 bg-blue-200 ">
           {servtype_json[db[0]["mode_2.serv"]]}
