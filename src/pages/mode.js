@@ -16,7 +16,7 @@ export default function Mode() {
   const queryParams = new URLSearchParams(location.search);
   const q1Response = queryParams.get("q1");
   const q2Response = queryParams.get("q2");
-
+let c
   const crowd_json = {
     1: "Many seats available",
     2: "Some seats available",
