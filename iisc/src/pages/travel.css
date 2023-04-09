@@ -1,0 +1,43 @@
+/* styles for question 1 */
+.bg-blue-200 {
+    background-color: #BFDBFE;
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* styles for question 2 */
+  .bg-purple-200 {
+    background-color: #E9D8FD;
+  }
+  
+  .animate__slideInLeft {
+    animation-name: slideInLeft;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
