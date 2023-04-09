@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/IISc_CiSTUP-Web-development-/static/css/main.358418dd.css",
+    "main.js": "/IISc_CiSTUP-Web-development-/static/js/main.198ad6a6.js",
+    "static/js/787.582aeb67.chunk.js": "/IISc_CiSTUP-Web-development-/static/js/787.582aeb67.chunk.js",
+    "index.html": "/IISc_CiSTUP-Web-development-/index.html",
+    "main.358418dd.css.map": "/IISc_CiSTUP-Web-development-/static/css/main.358418dd.css.map",
+    "main.198ad6a6.js.map": "/IISc_CiSTUP-Web-development-/static/js/main.198ad6a6.js.map",
+    "787.582aeb67.chunk.js.map": "/IISc_CiSTUP-Web-development-/static/js/787.582aeb67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.358418dd.css",
+    "static/js/main.198ad6a6.js"
+  ]
+}
